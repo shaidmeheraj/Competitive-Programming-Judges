@@ -12,18 +12,20 @@ void solve(){
 
         sort(v.begin(), v.end());
 
-        bool flag=true;
+        bool flag=false;
         //int cnt = 0;
-        for(int i=1; i<n; i++)
+        if(n<=2) flag=true;
+        else if(n == 3)
         {
-            if(v[i]+v[i-1]== v[1]+v[0]) flag=true;
-            else {
-                flag=false;
-                break;
-            }
+            if((v[0]+1 == v[n-1]) || (v[0] == v[n-1])) flag=true;
+        }
+        else if(n>3)
+        {
+            if(v[0] == v[n-1]) flag=true; 
         }
         //cout << cnt+1 << endl;
-        cout << (flag ? "Yes" : "No") << endl;
+        if(flag == true) cout << "Yes" << endl;
+        else cout << "No" << endl;
         
 }
 int main()
