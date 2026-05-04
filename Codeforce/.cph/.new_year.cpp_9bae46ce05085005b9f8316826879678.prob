@@ -1,0 +1,1 @@
+{"name":"Local: new_year","url":"e:\\GitHub\\Competitive-Programming-Judges\\Codeforce\\new_year.cpp","tests":[{"id":1768452963901,"input":"5\n23 55\n23 0\n0 1\n4 20\n23 59\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\GitHub\\Competitive-Programming-Judges\\Codeforce\\new_year.cpp","group":"local","local":true}
